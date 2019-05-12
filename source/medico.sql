@@ -1,0 +1,12 @@
+DROP USER IF EXISTS 'Medico'@'localhost';
+CREATE USER 'Medico'@'localhost' IDENTIFIED BY '12345';
+GRANT EXECUTE ON PROCEDURE centrosaude.EmitirReceita TO 'Medico'@'localhost';
+GRANT EXECUTE ON PROCEDURE centrosaude.MarcarConsulta TO 'Medico'@'localhost';
+GRANT EXECUTE ON PROCEDURE centrosaude.DesmarcarConsulta TO 'Medico'@'localhost';
+GRANT EXECUTE ON PROCEDURE centrosaude.RemarcarConsulta TO 'Medico'@'localhost';
+GRANT EXECUTE ON PROCEDURE centrosaude.historicoClinico TO 'Medico'@'localhost';
+GRANT SELECT ON centrosaude.listaObito TO 'Medico'@'localhost';
+GRANT SELECT ON centrosaude.vwUtentes TO 'Medico'@'localhost';
+GRANT SELECT ON centrosaude.vwMedicamentos TO 'Medico'@'localhost';	
+FLUSH PRIVILEGES;
+SHOW GRANTS FOR  'Medico'@'localhost' ;
