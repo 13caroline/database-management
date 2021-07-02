@@ -2,7 +2,7 @@
 
 The purpose of this project is the development of a management module for a small hospital unit. To this end, a model was created that, in addition to allowing scheduling and carrying out appointments, allows access to the medical history of each user and access to the history of appointments carried out at the institution, thus allowing greater management, both of resources and time. ([Technical report](https://github.com/13caroline/database-management/blob/master/Grupo43.pdf))
 
-**Keywords**: Relational Databases, SQL, MySQL Workbench
+**Keywords**: Relational Databases, SQL, MySQL Workbench, MongoDB
  
 ## Collaborators
 
